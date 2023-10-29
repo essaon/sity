@@ -2,6 +2,10 @@ from tkinter.messagebox import QUESTION
 from django.contrib import admin
 from . import models
 
+admin.site.site_header = "Mental Damage"
+admin.site.site_title = "Illness"
+admin.site.index_title = "Welcome Versality"
+
 
 class ChoiseInLine(admin.TabularInline):
     model = models.Choise
