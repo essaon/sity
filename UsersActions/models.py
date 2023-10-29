@@ -9,7 +9,7 @@ class Questions(models.Model):
         return self.question_text
 
 
-class Choise(models.Model):
+class Choice(models.Model):
     question_text = models.ForeignKey(Questions, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=100)
     votes = models.IntegerField(default=0)

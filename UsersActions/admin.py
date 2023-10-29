@@ -8,7 +8,7 @@ admin.site.index_title = "Welcome Versality"
 
 
 class ChoiseInLine(admin.TabularInline):
-    model = models.Choise
+    model = models.Choice
     extra = 2
 
 
